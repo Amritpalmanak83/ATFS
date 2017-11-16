@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27648" started-at="2017-11-15T23:54:58Z" finished-at="2017-11-15T23:55:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27648" started-at="2017-11-15T23:54:58Z" finished-at="2017-11-15T23:55:26Z">
+      <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
+        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@73010765]" name="checkvalidUser" duration-ms="11056" started-at="2017-11-15T15:54:59Z" finished-at="2017-11-15T15:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkvalidUser -->
+        <test-method status="PASS" signature="personabarcheck()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@73010765]" name="personabarcheck" duration-ms="2369" started-at="2017-11-15T15:55:10Z" finished-at="2017-11-15T15:55:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personabarcheck -->
+        <test-method status="PASS" signature="checkvalidLogin()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@73010765]" name="checkvalidLogin" duration-ms="6472" started-at="2017-11-15T15:55:12Z" finished-at="2017-11-15T15:55:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkvalidLogin -->
+        <test-method status="PASS" signature="createvalidLogin()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@73010765]" name="createvalidLogin" duration-ms="7708" started-at="2017-11-15T15:55:18Z" finished-at="2017-11-15T15:55:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createvalidLogin -->
+      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
