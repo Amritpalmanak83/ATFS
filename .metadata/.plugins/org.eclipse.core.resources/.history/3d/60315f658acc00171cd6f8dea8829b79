@@ -14,7 +14,7 @@ import PlatformTestDataSheet.ExcelDataSheet;
 public class VerifyLoginTest 
 {
 	public WebDriver driver;
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void checkvalidUser() 
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/login");
@@ -22,14 +22,14 @@ public class VerifyLoginTest
 		LoginRegistrationClass login_page = PageFactory.initElements(driver, LoginRegistrationClass.class);
 		login_page.login_engage("Host","dnnhost"); 
 	}
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void personabarcheck()
 	{
 		PersonaBarClass persona = PageFactory.initElements(driver, PersonaBarClass.class);
 		persona.PersonabarOpenContent(driver);
 		driver.quit();
 	}
-	@Test(priority=3)
+	//@Test(priority=3)
 	public void checkvalidLogin()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/login");
@@ -40,7 +40,7 @@ public class VerifyLoginTest
 		login_page.login_engage(userinfo[0],userinfo[1]); 
 		driver.quit();
 	}
-	@Test(priority=4)
+	//@Test(priority=4)
 	public void createvalidLogin()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/register");
@@ -55,7 +55,7 @@ public class VerifyLoginTest
 		}
 		driver.quit();
 	}
-	@Test(priority=5)
+	@Test(priority=4)
 	public void runDatabase() throws SQLException
 	{
 		PlatformDataBaseTest dbtest = new PlatformDataBaseTest();
