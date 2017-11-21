@@ -5,7 +5,7 @@
     <classes>
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
         <methods>
-          <include name="checkvalidUser"/>
+          <include name="runDatabase"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
     </classes>
