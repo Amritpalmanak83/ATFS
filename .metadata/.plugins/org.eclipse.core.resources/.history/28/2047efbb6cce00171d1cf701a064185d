@@ -55,7 +55,7 @@ public class VerifyLoginTest
 		}
 		driver.quit();
 	}
-	@Test(priority=5)
+	//@Test(priority=5)
 	public void runDatabase() throws SQLException
 	{
 		PlatformDataBaseTest dbtest = new PlatformDataBaseTest();
