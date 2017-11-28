@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class PlatformDataBaseTest 
 {
-	public ResultSet PlatformDatabase(String SQlQuery )
+	public ResultSet UserDataBase(String SQlQuery )
 	{
 		// create variable for the Connection string
 		String ConnectionURL= "jdbc:sqlserver://localhost:1433;" 

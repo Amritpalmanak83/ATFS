@@ -2,32 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23220" started-at="2017-11-20T05:31:43Z" finished-at="2017-11-20T05:32:07Z">
+  <suite name="PlatformSuite" duration-ms="28658" started-at="2017-11-28T02:50:30Z" finished-at="2017-11-28T02:50:59Z">
     <groups>
+      <group name="UserTest">
+        <method signature="VerifyLoginTest.checkUserDatabase()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkvalidLogin()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkvalidUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.registerUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+      </group> <!-- UserTest -->
+      <group name="Personabar Settings">
+        <method signature="PersonabarPageTest.checkPersonabarSettings()[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarSettings" class="PlatformTesting.com.platform.org.PersonabarPageTest"/>
+      </group> <!-- Personabar Settings -->
     </groups>
-    <test name="Default test" duration-ms="23220" started-at="2017-11-20T05:31:43Z" finished-at="2017-11-20T05:32:07Z">
+    <test name="PlatformTest" duration-ms="28658" started-at="2017-11-28T02:50:30Z" finished-at="2017-11-28T02:50:59Z">
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
-        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@ae45eb6]" name="checkvalidUser" duration-ms="6545" started-at="2017-11-19T21:31:43Z" finished-at="2017-11-19T21:31:50Z">
+        <test-method status="PASS" signature="checkUserDatabase()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" duration-ms="560" started-at="2017-11-27T18:50:30Z" finished-at="2017-11-27T18:50:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkvalidUser -->
-        <test-method status="PASS" signature="personabarcheck()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@ae45eb6]" name="personabarcheck" duration-ms="2689" started-at="2017-11-19T21:31:50Z" finished-at="2017-11-19T21:31:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personabarcheck -->
-        <test-method status="PASS" signature="checkvalidLogin()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@ae45eb6]" name="checkvalidLogin" duration-ms="6253" started-at="2017-11-19T21:31:53Z" finished-at="2017-11-19T21:31:59Z">
+        </test-method> <!-- checkUserDatabase -->
+        <test-method status="PASS" signature="checkvalidLogin()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" duration-ms="6816" started-at="2017-11-27T18:50:31Z" finished-at="2017-11-27T18:50:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkvalidLogin -->
-        <test-method status="PASS" signature="createvalidLogin()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@ae45eb6]" name="createvalidLogin" duration-ms="7508" started-at="2017-11-19T21:31:59Z" finished-at="2017-11-19T21:32:06Z">
+        <test-method status="PASS" signature="checkvalidUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" duration-ms="5263" started-at="2017-11-27T18:50:38Z" finished-at="2017-11-27T18:50:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createvalidLogin -->
-        <test-method status="PASS" signature="runDatabase()[pri:5, instance:PlatformTesting.com.platform.org.VerifyLoginTest@ae45eb6]" name="runDatabase" duration-ms="196" started-at="2017-11-19T21:32:06Z" finished-at="2017-11-19T21:32:07Z">
+        </test-method> <!-- checkvalidUser -->
+        <test-method status="PASS" signature="registerUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" duration-ms="8020" started-at="2017-11-27T18:50:43Z" finished-at="2017-11-27T18:50:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runDatabase -->
+        </test-method> <!-- registerUser -->
       </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
+        <test-method status="PASS" signature="checkPersonabarSettings()[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarSettings" duration-ms="7970" started-at="2017-11-27T18:50:51Z" finished-at="2017-11-27T18:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPersonabarSettings -->
+      </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
+    </test> <!-- PlatformTest -->
+  </suite> <!-- PlatformSuite -->
 </testng-results>

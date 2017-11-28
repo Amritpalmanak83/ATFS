@@ -4,7 +4,7 @@
   <test name="PlatformTest">
     <classes>
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest"/>
-      <class name="PlatformDataBaseTesting.PlatformDataBaseTestin"/>
+      <class name="PlatformTesting.com.platform.org.PersonabarPageTest"/>
     </classes>
   </test> <!-- PlatformTest -->
 </suite> <!-- PlatformSuite -->

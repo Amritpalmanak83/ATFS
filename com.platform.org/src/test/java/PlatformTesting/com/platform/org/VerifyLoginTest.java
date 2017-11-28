@@ -3,6 +3,7 @@ package PlatformTesting.com.platform.org;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.tools.ant.taskdefs.condition.And;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ import PlatformTestDataSheet.ExcelDataSheet;
 public class VerifyLoginTest 
 {
 	public WebDriver driver;
-	@Test(priority=1)
+	@Test(groups= "UserTest")
 	public void checkvalidUser() 
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/login");
@@ -22,14 +23,7 @@ public class VerifyLoginTest
 		LoginRegistrationClass login_page = PageFactory.initElements(driver, LoginRegistrationClass.class);
 		login_page.login_engage("Host","dnnhost"); 
 	}
-	@Test(priority=2)
-	public void personabarcheck()
-	{
-		PersonaBarClass persona = PageFactory.initElements(driver, PersonaBarClass.class);
-		persona.PersonabarOpenContent(driver);
-		driver.quit();
-	}
-	@Test(priority=3)
+	@Test(groups= "UserTest")
 	public void checkvalidLogin()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/login");
@@ -40,8 +34,8 @@ public class VerifyLoginTest
 		login_page.login_engage(userinfo[0],userinfo[1]); 
 		driver.quit();
 	}
-	@Test(priority=4)
-	public void createvalidLogin()
+	@Test(groups= "UserTest")
+	public void registerUser()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/register");
 		driver.manage().window().maximize();
@@ -55,15 +49,16 @@ public class VerifyLoginTest
 		}
 		driver.quit();
 	}
-	//@Test(priority=5)
-	public void runDatabase() throws SQLException
+	@Test(groups= "UserTest")
+	public void checkUserDatabase() throws SQLException
 	{
-		PlatformDataBaseTest dbtest = new PlatformDataBaseTest();
-		ResultSet rs = dbtest.PlatformDatabase ("Select UserId, Username, email, IsDeleted from dbo.Users;");
+		PlatformDataBaseTest TestDB = new PlatformDataBaseTest();
+		ResultSet rs = TestDB.UserDataBase("Select UserId, Username, email, IsDeleted from dbo.Users;");
 		while (rs.next())
 		{
 			System.out.println(rs.getString(1)+ " " + rs.getString(2)+" " + rs.getString(3)+" "+ rs.getString(4));
 		}
+		if(rs!= null) try {rs.close();} catch(Exception e) {}
 		
 	}
 }
