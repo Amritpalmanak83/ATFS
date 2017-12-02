@@ -9,7 +9,7 @@ import PlatformHelper.HelperClass;
 public class PersonabarPageTest 
 {
 	public WebDriver driver;
-	@Test(priority = 1,groups= "PersonabarPages")
+	@Test(groups= "PersonabarPages", priority = 5)
 	public void checkPersonabarPages() 
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
@@ -19,13 +19,13 @@ public class PersonabarPageTest
 		PersonaBarPageClass persona = PageFactory.initElements(driver, PersonaBarPageClass.class);
 		persona.PersonabarOpenPages(driver);
 	}
-	@Test(priority = 2,groups= "PersonabarPages")
-	public String PersonabarCreatePage() 
+	@Test(groups= "PersonabarPages", priority = 6)
+	public void PersonabarCreatePage() 
 	{
-		int randNum = (int) (Math.random() * 10); // generate random number
+		int randNum = (int) (Math.random() * 1000); // generate random number
 		PersonaBarPageClass persona = PageFactory.initElements(driver, PersonaBarPageClass.class);
 		persona.PersonabarCreatePage(driver, "PAGEName"+randNum);
-		return("PAGEName"+randNum);
+		//return("PAGEName"+randNum);
 	}	
 	
 }

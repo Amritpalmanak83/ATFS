@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PlatformSuite">
+  <test name="PlatformTest">
+    <classes>
+      <class name="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+      <class name="PlatformTesting.com.platform.org.PersonabarPageTest"/>
+    </classes>
+  </test> <!-- PlatformTest -->
+</suite> <!-- PlatformSuite -->

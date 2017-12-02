@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PlatformSuite]">
+  <test name="PlatformTest(failed)">
     <classes>
-      <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
+      <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
         <methods>
-          <include name="PersonabarCreatePage"/>
+          <include name="checkUserDatabase"/>
         </methods>
-      </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
+      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- PlatformTest(failed) -->
+</suite> <!-- Failed suite [PlatformSuite] -->

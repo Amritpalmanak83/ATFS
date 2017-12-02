@@ -13,7 +13,7 @@ import PlatformTestDataSheet.ReadExcelDataSheet;
 public class VerifyLoginTest 
 {
 	public WebDriver driver;
-	@Test(priority = 1,groups= "UserTest")
+	@Test(groups= "UserTest",priority = 1)
 	public void checkvalidUser() 
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
@@ -22,7 +22,7 @@ public class VerifyLoginTest
 		login_page.login_engage(driver,"Host","dnnhost"); 
 		driver.quit();
 	}
-	@Test(priority = 2,groups= "UserTest")
+	@Test(groups= "UserTest", priority = 2)
 	public void checkvalidLogin()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
@@ -33,7 +33,7 @@ public class VerifyLoginTest
 		login_page.login_engage(driver, userinfo[0],userinfo[1]); 
 		driver.quit();
 	}
-	@Test(priority = 3,groups= "UserTest")
+	@Test(groups= "UserTest", priority = 3)
 	public void registerUser()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
@@ -49,7 +49,7 @@ public class VerifyLoginTest
 		}
 		driver.quit();
 	}
-	@Test(priority = 4,groups= "UserTest")
+	@Test(groups= "UserTest", priority = 4)
 	public void checkUserDatabase() throws SQLException
 	{
 		PlatformDataBaseTest TestDB = new PlatformDataBaseTest();
