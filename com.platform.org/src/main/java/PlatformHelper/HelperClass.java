@@ -72,6 +72,11 @@ public class HelperClass
 			return false;
 		}						
 	}
+	public static void scrollto ( WebDriver driver, WebElement srcelement)
+	{
+		Actions action = new Actions(driver);
+		action.moveToElement(srcelement).perform();
+	}
 
 
 }

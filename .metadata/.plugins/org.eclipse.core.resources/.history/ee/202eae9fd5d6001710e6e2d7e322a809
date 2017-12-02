@@ -1,0 +1,73 @@
+package PlatformTesting.com.platform.org;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import PlatformHelper.HelperClass;
+
+public class PersonaBarClass 
+{
+
+	@FindBy(how=How.XPATH,using="//div[@id='personabar']")
+	WebElement personabar;
+
+	@FindBy(how=How.XPATH,using="//*[@id='Settings']")
+	WebElement Setting;
+	
+	@FindBy(how=How.XPATH,using="//*[@id='Content']")
+	WebElement Content;
+
+	@FindBy(how=How.XPATH,using="//*[@id='Manage']")
+	WebElement Manage;
+
+	@FindBy(how=How.XPATH,using="//*[@id='Dnn.Pages']")
+	WebElement Pages;
+
+	
+	@FindBy(how=How.XPATH,using = ".//*[@id='Evoq.StructuredContent']")
+	WebElement StructureContent;
+
+	public void PersonabarOpenSetting(WebDriver driver) 
+	{
+		driver.switchTo().frame("personaBar-iframe");
+		if(HelperClass.waitElementpresent(driver, personabar)) 
+		{
+			HelperClass.hoverover(driver, Setting);
+			HelperClass.hoverAndClick(driver, Setting, Setting);
+		}
+		else
+		{
+			System.out.println("Element is not found ");
+		}
+	}
+	public void PersonabarOpenpages(WebDriver driver) 
+	{
+		driver.switchTo().frame("personaBar-iframe");
+		if(HelperClass.waitElementpresent(driver, personabar)) 
+		{
+			HelperClass.hoverover(driver, Content);
+			HelperClass.hoverAndClick(driver, Content, Pages);
+		}
+		else
+		{
+			System.out.println("Element is not found ");
+		}
+	}
+	public void PersonabarCreatePage(WebDriver driver) 
+	{
+		driver.switchTo().frame("personaBar-iframe");
+		if(HelperClass.waitElementpresent(driver, personabar)) 
+		{
+			HelperClass.hoverover(driver, Content);
+			HelperClass.hoverAndClick(driver, Content, Pages);
+		}
+		else
+		{
+			System.out.println("Element is not found ");
+		}
+	}	
+	
+	
+}

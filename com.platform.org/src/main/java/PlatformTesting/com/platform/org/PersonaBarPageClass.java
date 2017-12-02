@@ -1,0 +1,80 @@
+package PlatformTesting.com.platform.org;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import PlatformHelper.HelperClass;
+
+public class PersonaBarPageClass 
+{
+
+	@FindBy(how=How.XPATH,using="//div[@id='personabar']")
+	WebElement personabar;
+	
+	@FindBy(how=How.XPATH,using="//*[@id='Content']")
+	WebElement Content;
+
+	@FindBy(how=How.XPATH,using="//*[@id='Manage']")
+	WebElement Manage;
+
+	@FindBy(how=How.XPATH,using="//*[@id='Dnn.Pages']")
+	WebElement Pages;
+
+	@FindBy(how=How.XPATH,using ="//button[@class='dnn-ui-common-button large']")
+	WebElement createPage;
+	
+	@FindBy(how=How.ID, using="react-tabs-0")
+	WebElement DetailTab;
+	
+	@FindBy(how=How.XPATH, using="//Label[.='Name*']/../../div[2]/input[@type='text']")
+	WebElement Input_Name;
+	
+	@FindBy(how=How.XPATH, using="//Label[.='Title']/../../div[2]/input[@type='text']")
+	WebElement Input_Title;
+	
+	@FindBy(how=How.XPATH, using="//Label[.='Parent Page']")
+	WebElement Parent_page;
+	
+	@FindBy(how=How.XPATH, using="//div[@class='buttons-box']/button[2]")
+	WebElement Addpage_Button;
+
+	@FindBy(how=How.XPATH, using="//div[@id='editBarContainer']/div[2]/div[2]/ul/li/button[.='Close']")
+	WebElement Close_button;
+	
+	@FindBy(how=How.XPATH, using ="//div[@class='editBarFrameContainer personabar-shown']")
+	WebElement editBar;
+	
+	public void PersonabarOpenPages(WebDriver driver) 
+	{
+		driver.switchTo().frame("personaBar-iframe");
+		if(HelperClass.waitElementpresent(driver, personabar)) 
+		{
+			//HelperClass.hoverover(driver, Content);
+			HelperClass.hoverAndClick(driver, Content, Content);
+		}
+		else
+		{
+			System.out.println("Element is not found ");
+		}
+	}
+	public void PersonabarCreatePage(WebDriver driver, String Page_Name) 
+	{
+		//driver.switchTo().frame("personaBar-iframe");
+		HelperClass.waitElementpresent(driver, createPage);
+		createPage.click();
+		HelperClass.waitElementpresent(driver, DetailTab);
+		DetailTab.click();
+		Input_Name.sendKeys(Page_Name);
+		Input_Title.sendKeys(Page_Name);
+		HelperClass.scrollto(driver, Parent_page);
+		Addpage_Button.click();
+		driver.switchTo().defaultContent(); 
+		HelperClass.waitElementpresent(driver, editBar);
+		driver.switchTo().frame("editBar-iframe");
+		HelperClass.waitElementpresent(driver, Close_button);		
+		Close_button.click();
+	}
+}

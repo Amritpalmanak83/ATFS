@@ -1,44 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="PlatformSuite" duration-ms="28658" started-at="2017-11-28T02:50:30Z" finished-at="2017-11-28T02:50:59Z">
+  <suite name="Default suite" duration-ms="22473" started-at="2017-12-02T06:36:25Z" finished-at="2017-12-02T06:36:47Z">
     <groups>
       <group name="UserTest">
-        <method signature="VerifyLoginTest.checkUserDatabase()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
-        <method signature="VerifyLoginTest.checkvalidLogin()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
-        <method signature="VerifyLoginTest.checkvalidUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
-        <method signature="VerifyLoginTest.registerUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkUserDatabase()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkUserDatabase" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkvalidLogin" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkvalidUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="registerUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
       </group> <!-- UserTest -->
-      <group name="Personabar Settings">
-        <method signature="PersonabarPageTest.checkPersonabarSettings()[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarSettings" class="PlatformTesting.com.platform.org.PersonabarPageTest"/>
-      </group> <!-- Personabar Settings -->
     </groups>
-    <test name="PlatformTest" duration-ms="28658" started-at="2017-11-28T02:50:30Z" finished-at="2017-11-28T02:50:59Z">
+    <test name="Default test" duration-ms="22473" started-at="2017-12-02T06:36:25Z" finished-at="2017-12-02T06:36:47Z">
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
-        <test-method status="PASS" signature="checkUserDatabase()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" duration-ms="560" started-at="2017-11-27T18:50:30Z" finished-at="2017-11-27T18:50:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkUserDatabase -->
-        <test-method status="PASS" signature="checkvalidLogin()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" duration-ms="6816" started-at="2017-11-27T18:50:31Z" finished-at="2017-11-27T18:50:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkvalidLogin -->
-        <test-method status="PASS" signature="checkvalidUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" duration-ms="5263" started-at="2017-11-27T18:50:38Z" finished-at="2017-11-27T18:50:43Z">
+        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkvalidUser" duration-ms="7000" started-at="2017-12-01T22:36:25Z" finished-at="2017-12-01T22:36:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkvalidUser -->
-        <test-method status="PASS" signature="registerUser()[pri:0, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" duration-ms="8020" started-at="2017-11-27T18:50:43Z" finished-at="2017-11-27T18:50:51Z">
+        <test-method status="PASS" signature="checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkvalidLogin" duration-ms="6501" started-at="2017-12-01T22:36:32Z" finished-at="2017-12-01T22:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkvalidLogin -->
+        <test-method status="PASS" signature="registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="registerUser" duration-ms="8740" started-at="2017-12-01T22:36:38Z" finished-at="2017-12-01T22:36:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
-      <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
-        <test-method status="PASS" signature="checkPersonabarSettings()[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarSettings" duration-ms="7970" started-at="2017-11-27T18:50:51Z" finished-at="2017-11-27T18:50:59Z">
+        <test-method status="PASS" signature="checkUserDatabase()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@3532ec19]" name="checkUserDatabase" duration-ms="200" started-at="2017-12-01T22:36:47Z" finished-at="2017-12-01T22:36:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkPersonabarSettings -->
-      </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
-    </test> <!-- PlatformTest -->
-  </suite> <!-- PlatformSuite -->
+        </test-method> <!-- checkUserDatabase -->
+      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
+      <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
-          <include name="runDatabase"/>
+          <include name="PersonabarCreatePage"/>
         </methods>
-      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
+      </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,15 +9,23 @@ import PlatformHelper.HelperClass;
 public class PersonabarPageTest 
 {
 	public WebDriver driver;
-	@Test(groups= "Personabar Settings")
-	public void checkPersonabarSettings() 
+	@Test(priority = 1,groups= "PersonabarPages")
+	public void checkPersonabarPages() 
 	{
-		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/login");
+		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
 		driver.manage().window().maximize();
 		LoginRegistrationClass login_page = PageFactory.initElements(driver, LoginRegistrationClass.class);
-		login_page.login_engage("Host","dnnhost"); 
-		PersonaBarClass persona = PageFactory.initElements(driver, PersonaBarClass.class);
-		persona.PersonabarOpenContent(driver);
-		driver.quit();
+		login_page.login_engage(driver,"Host","dnnhost"); 
+		PersonaBarPageClass persona = PageFactory.initElements(driver, PersonaBarPageClass.class);
+		persona.PersonabarOpenPages(driver);
 	}
+	@Test(priority = 2,groups= "PersonabarPages")
+	public String PersonabarCreatePage() 
+	{
+		int randNum = (int) (Math.random() * 10); // generate random number
+		PersonaBarPageClass persona = PageFactory.initElements(driver, PersonaBarPageClass.class);
+		persona.PersonabarCreatePage(driver, "PAGEName"+randNum);
+		return("PAGEName"+randNum);
+	}	
+	
 }
