@@ -71,6 +71,7 @@ public class PersonaBarPageClass
 		Input_Title.sendKeys(Page_Name);
 		HelperClass.scrollto(driver, Parent_page);
 		Addpage_Button.click();
+		driver.switchTo().defaultContent(); 
 		HelperClass.waitElementpresent(driver, editBar);
 		driver.switchTo().frame("editBar-iframe");
 		HelperClass.waitElementpresent(driver, Close_button);		
