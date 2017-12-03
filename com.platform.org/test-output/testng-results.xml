@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="PlatformSuite" duration-ms="34562" started-at="2017-12-03T02:19:21Z" finished-at="2017-12-03T02:19:56Z">
+  <suite name="PlatformSuite" duration-ms="42717" started-at="2017-12-03T02:59:04Z" finished-at="2017-12-03T02:59:47Z">
     <groups>
       <group name="UserTest">
         <method signature="VerifyLoginTest.checkUserDatabase()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
@@ -15,31 +15,31 @@
         <method signature="PersonabarPageTest.checkPersonabarPages()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarPages" class="PlatformTesting.com.platform.org.PersonabarPageTest"/>
       </group> <!-- PersonabarPages -->
     </groups>
-    <test name="PlatformTest" duration-ms="34562" started-at="2017-12-03T02:19:21Z" finished-at="2017-12-03T02:19:56Z">
+    <test name="PlatformTest" duration-ms="42717" started-at="2017-12-03T02:59:04Z" finished-at="2017-12-03T02:59:47Z">
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
-        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" duration-ms="7575" started-at="2017-12-02T18:19:21Z" finished-at="2017-12-02T18:19:29Z">
+        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidUser" duration-ms="7148" started-at="2017-12-02T18:59:04Z" finished-at="2017-12-02T18:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkvalidUser -->
-        <test-method status="PASS" signature="checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" duration-ms="6412" started-at="2017-12-02T18:19:29Z" finished-at="2017-12-02T18:19:35Z">
+        <test-method status="PASS" signature="checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkvalidLogin" duration-ms="6412" started-at="2017-12-02T18:59:11Z" finished-at="2017-12-02T18:59:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkvalidLogin -->
-        <test-method status="PASS" signature="registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" duration-ms="8534" started-at="2017-12-02T18:19:35Z" finished-at="2017-12-02T18:19:44Z">
+        <test-method status="PASS" signature="registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="registerUser" duration-ms="8713" started-at="2017-12-02T18:59:18Z" finished-at="2017-12-02T18:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="checkUserDatabase()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" duration-ms="171" started-at="2017-12-02T18:19:44Z" finished-at="2017-12-02T18:19:44Z">
+        <test-method status="PASS" signature="checkUserDatabase()[pri:4, instance:PlatformTesting.com.platform.org.VerifyLoginTest@68c4039c]" name="checkUserDatabase" duration-ms="166" started-at="2017-12-02T18:59:26Z" finished-at="2017-12-02T18:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserDatabase -->
       </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
-        <test-method status="PASS" signature="checkPersonabarPages()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarPages" duration-ms="7319" started-at="2017-12-02T18:19:44Z" finished-at="2017-12-02T18:19:51Z">
+        <test-method status="PASS" signature="checkPersonabarPages()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="checkPersonabarPages" duration-ms="7925" started-at="2017-12-02T18:59:26Z" finished-at="2017-12-02T18:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPersonabarPages -->
-        <test-method status="PASS" signature="PersonabarCreatePage()[pri:6, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="PersonabarCreatePage" duration-ms="4530" started-at="2017-12-02T18:19:51Z" finished-at="2017-12-02T18:19:56Z">
+        <test-method status="PASS" signature="PersonabarCreatePage()[pri:6, instance:PlatformTesting.com.platform.org.PersonabarPageTest@27efef64]" name="PersonabarCreatePage" duration-ms="12332" started-at="2017-12-02T18:59:34Z" finished-at="2017-12-02T18:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PersonabarCreatePage -->
