@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PlatformSuite]">
+  <listeners>
+    <listener class-name="PlatformListerner.TestNGListerner"/>
+  </listeners>
   <test name="PlatformTest(failed)">
     <classes>
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
           <include name="checkPersonabarPages"/>
-          <include name="PersonabarCreatePage"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
-      <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
-        <methods>
-          <include name="checkvalidUser"/>
-          <include name="checkUserDatabase"/>
-          <include name="registerUser"/>
-          <include name="checkvalidLogin"/>
-        </methods>
-      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
     </classes>
   </test> <!-- PlatformTest(failed) -->
 </suite> <!-- Failed suite [PlatformSuite] -->

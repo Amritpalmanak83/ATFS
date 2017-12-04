@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PlatformSuite">
+  <listeners>
+  	<listener class-name="PlatformListerner.TestNGListerner"></listener>
+  </listeners>
   <test name="PlatformTest">
     <classes>
       <class name="PlatformTesting.com.platform.org.VerifyLoginTest"/>

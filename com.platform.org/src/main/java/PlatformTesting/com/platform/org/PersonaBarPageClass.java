@@ -62,7 +62,6 @@ public class PersonaBarPageClass
 	}
 	public void PersonabarCreatePage(WebDriver driver, String Page_Name) 
 	{
-		//driver.switchTo().frame("personaBar-iframe");
 		HelperClass.waitElementpresent(driver, createPage);
 		createPage.click();
 		HelperClass.waitElementpresent(driver, DetailTab);
@@ -71,9 +70,9 @@ public class PersonaBarPageClass
 		Input_Title.sendKeys(Page_Name);
 		HelperClass.scrollto(driver, Parent_page);
 		Addpage_Button.click();
-		//HelperClass.waitElementpresent(driver, editBar);
-		//driver.switchTo().frame("editBar-iframe");
-		//HelperClass.waitElementpresent(driver, Close_button);		
-		//Close_button.click();
+		HelperClass.waitElementpresent(driver, editBar);
+		driver.switchTo().frame("editBar-iframe");
+		HelperClass.waitElementpresent(driver, Close_button);		
+		Close_button.click();
 	}
 }

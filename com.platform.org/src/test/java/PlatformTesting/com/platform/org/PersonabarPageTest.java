@@ -15,7 +15,7 @@ public class PersonabarPageTest
 		driver = HelperClass.startBrowser("Chrome", "http://platform92.me/");
 		driver.manage().window().maximize();
 		LoginRegistrationClass login_page = PageFactory.initElements(driver, LoginRegistrationClass.class);
-		login_page.login_engage(driver,"Host","dnnhost"); 
+		login_page.login_engage(driver,"QAHost","dnnhost123"); 
 		PersonaBarPageClass persona = PageFactory.initElements(driver, PersonaBarPageClass.class);
 		persona.PersonabarOpenPages(driver);
 		driver.quit();
@@ -32,6 +32,7 @@ public class PersonabarPageTest
 		int randNum = (int) (Math.random() * 1000); // generate random number
 		persona.PersonabarCreatePage(driver, "PAGEName"+randNum);
 		//return("PAGEName"+randNum);
+		driver.quit();
 	}	
 	
 }
