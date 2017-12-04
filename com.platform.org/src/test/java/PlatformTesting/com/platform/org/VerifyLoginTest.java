@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+
 import PlatformDataBaseTesting.PlatformDataBaseTest;
 import PlatformHelper.HelperClass;
 import PlatformTestDataSheet.ReadExcelDataSheet;
@@ -20,7 +21,6 @@ public class VerifyLoginTest
 		LoginRegistrationClass login_page = PageFactory.initElements(driver, LoginRegistrationClass.class);
 		login_page.login_engage(driver,"Host","dnnhost"); 
 		driver.quit();
-
 	}
 	@Test(groups= "UserTest", priority = 2)
 	public void checkvalidLogin()
@@ -32,7 +32,6 @@ public class VerifyLoginTest
 		String userinfo[] = rd_excel.getUserData(0, 0);
 		login_page.login_engage(driver, userinfo[0],userinfo[1]); 
 		driver.quit();
-
 	}
 	@Test(groups= "UserTest", priority = 3)
 	public void registerUser()

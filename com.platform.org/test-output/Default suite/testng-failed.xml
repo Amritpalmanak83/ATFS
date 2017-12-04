@@ -5,7 +5,6 @@
     <classes>
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
-          <include name="checkPersonabarPages"/>
           <include name="PersonabarCreatePage"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->

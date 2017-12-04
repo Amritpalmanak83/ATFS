@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-PlatformSuite">
-              <span class="suite-name border-failed">PlatformSuite</span>
+              <span class="suite-name border-passed">PlatformSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-PlatformSuite" class="hide-methods failed suite-PlatformSuite"> (hide)</a> <!-- hide-methods failed suite-PlatformSuite -->
-                      <a href="#" panel-name="suite-PlatformSuite" class="show-methods failed suite-PlatformSuite"> (show)</a> <!-- show-methods failed suite-PlatformSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-PlatformSuite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PlatformSuite" title="PlatformTesting.com.platform.org.PersonabarPageTest" hash-for-method="checkPersonabarPages">checkPersonabarPages</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-PlatformSuite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-PlatformSuite" title="PlatformTesting.com.platform.org.PersonabarPageTest" hash-for-method="PersonabarCreatePage">PersonabarCreatePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PlatformSuite" title="PlatformTesting.com.platform.org.PersonabarPageTest" hash-for-method="checkPersonabarPages">checkPersonabarPages</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,30 +142,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PlatformSuite" class="panel PlatformSuite">
-          <div class="suite-PlatformSuite-class-failed">
+          <div class="suite-PlatformSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">PlatformTesting.com.platform.org.PersonabarPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="PersonabarCreatePage">
+                  </a> <!-- PersonabarCreatePage -->
+                  <span class="method-name">PersonabarCreatePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkPersonabarPages">
                   </a> <!-- checkPersonabarPages -->
                   <span class="method-name">checkPersonabarPages</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id personaBar-iframe
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_152&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:939)
-	at PlatformTesting.com.platform.org.PersonaBarPageClass.PersonabarOpenPages(PersonaBarPageClass.java:52)
-	at PlatformTesting.com.platform.org.PersonabarPageTest.checkPersonabarPages(PersonabarPageTest.java:20)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PlatformSuite-class-failed -->
+          </div> <!-- suite-PlatformSuite-class-passed -->
           <div class="suite-PlatformSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -211,21 +200,6 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-PlatformSuite-class-passed -->
-          <div class="suite-PlatformSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">PlatformTesting.com.platform.org.PersonabarPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PersonabarCreatePage">
-                  </a> <!-- PersonabarCreatePage -->
-                  <span class="method-name">PersonabarCreatePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PlatformSuite-class-passed -->
         </div> <!-- panel PlatformSuite -->
         <div panel-name="test-xml-PlatformSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -236,9 +210,6 @@ Driver info: driver.version: unknown
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PlatformSuite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;PlatformListerner.TestNGListerner&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test name=&quot;PlatformTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;PlatformTesting.com.platform.org.VerifyLoginTest&quot;/&gt;
@@ -318,32 +289,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PersonabarCreatePage')
 data.setCell(0, 2, 'PlatformTesting.com.platform.org.PersonabarPageTest')
-data.setCell(0, 3, 14415);
+data.setCell(0, 3, 17124);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'registerUser')
 data.setCell(1, 2, 'PlatformTesting.com.platform.org.VerifyLoginTest')
-data.setCell(1, 3, 8320);
+data.setCell(1, 3, 9468);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkvalidUser')
-data.setCell(2, 2, 'PlatformTesting.com.platform.org.VerifyLoginTest')
-data.setCell(2, 3, 6927);
+data.setCell(2, 1, 'checkPersonabarPages')
+data.setCell(2, 2, 'PlatformTesting.com.platform.org.PersonabarPageTest')
+data.setCell(2, 3, 8632);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkvalidLogin')
+data.setCell(3, 1, 'checkvalidUser')
 data.setCell(3, 2, 'PlatformTesting.com.platform.org.VerifyLoginTest')
-data.setCell(3, 3, 6492);
+data.setCell(3, 3, 6953);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkPersonabarPages')
-data.setCell(4, 2, 'PlatformTesting.com.platform.org.PersonabarPageTest')
-data.setCell(4, 3, 4968);
+data.setCell(4, 1, 'checkvalidLogin')
+data.setCell(4, 2, 'PlatformTesting.com.platform.org.VerifyLoginTest')
+data.setCell(4, 3, 6571);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkUserDatabase')
 data.setCell(5, 2, 'PlatformTesting.com.platform.org.VerifyLoginTest')
-data.setCell(5, 3, 167);
+data.setCell(5, 3, 175);
 window.suiteTableData['PlatformSuite']= { tableData: data, tableDiv: 'times-div-PlatformSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-PlatformSuite">
               </div> <!-- times-div-PlatformSuite -->
             </div> <!-- times-div -->
@@ -376,28 +347,26 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkvalidLogin</span>
-                <span class="method-start">6929 ms</span>
+                <span class="method-start">6956 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">registerUser</span>
-                <span class="method-start">13422 ms</span>
+                <span class="method-start">13528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkUserDatabase</span>
-                <span class="method-start">21743 ms</span>
+                <span class="method-start">22997 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">PlatformTesting.com.platform.org.PersonabarPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkPersonabarPages</span>
-                <span class="method-start">21911 ms</span>
+                <span class="method-start">23174 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PersonabarCreatePage</span>
-                <span class="method-start">27252 ms</span>
+                <span class="method-start">31807 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

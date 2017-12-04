@@ -1,13 +1,6 @@
 package PlatformHelper;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.tools.ant.util.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -77,34 +70,13 @@ public class HelperClass
 		else 
 		{
 			return false;
-		}	
+		}						
 	}
 	public static void scrollto ( WebDriver driver, WebElement srcelement)
 	{
 		Actions action = new Actions(driver);
 		action.moveToElement(srcelement).perform();
 	}
-	@SuppressWarnings("deprecation")
-	public static void captureScreenshot(String screenshotName)
-	{
 
-				try {
-					TakesScreenshot ts = (TakesScreenshot) driver;
-					
-					File source = ts.getScreenshotAs(OutputType.FILE);
-					
-					FileUtils.newFileUtils().copyFile(source, new File("./Screenshots/" + screenshotName + ".png"));
-					
-					System.out.println("screenshot captured");
-					
-				} catch (WebDriverException e) 
-				{
-					e.printStackTrace();
-				} catch (IOException e) 
-				{
-					e.printStackTrace();
-				}
-
-	}
 
 }
