@@ -6,7 +6,7 @@
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="PersonabarCreatePage"/>
+          <include name="checkPersonabarPages"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
     </classes>

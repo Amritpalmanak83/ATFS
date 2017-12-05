@@ -61,7 +61,6 @@ public class PersonaBarPageClass
 		{
 			System.out.println("Element is not found ");
 		}
-		
 	}
 	public void PersonabarCreatePage(WebDriver driver, String Page_Name) 
 	{
@@ -78,7 +77,6 @@ public class PersonaBarPageClass
 		HelperClass.scrollto(driver, Parent_page);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Addpage_Button.click();
-		driver.switchTo().defaultContent();
 		HelperClass.waitElementpresent(driver, editBar);
 		driver.switchTo().frame("editBar-iframe");
 		HelperClass.waitElementpresent(driver, Close_button);	

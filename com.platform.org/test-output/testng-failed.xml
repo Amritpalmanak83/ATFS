@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [PlatformSuite]">
-  <test name="PlatformTest(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="PersonabarCreatePage"/>
+          <include name="checkPersonabarPages"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
     </classes>
-  </test> <!-- PlatformTest(failed) -->
-</suite> <!-- Failed suite [PlatformSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
