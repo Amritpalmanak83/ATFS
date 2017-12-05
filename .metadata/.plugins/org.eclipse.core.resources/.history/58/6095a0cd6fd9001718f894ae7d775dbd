@@ -42,7 +42,6 @@ public class PersonabarPageTest
 		{
 			Utility.captureScreenshot(driver, result.getName());
 		}
-		driver.quit();
 	}
 	
 }

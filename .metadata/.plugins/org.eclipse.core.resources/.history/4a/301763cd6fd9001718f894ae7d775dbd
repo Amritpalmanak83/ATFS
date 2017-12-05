@@ -1,8 +1,6 @@
 package PlatformTesting.com.platform.org;
 
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,22 +63,17 @@ public class PersonaBarPageClass
 	public void PersonabarCreatePage(WebDriver driver, String Page_Name) 
 	{
 		//driver.switchTo().frame("personaBar-iframe");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HelperClass.waitElementpresent(driver, createPage);
 		createPage.click();
 		HelperClass.waitElementpresent(driver, DetailTab);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		DetailTab.click();
 		Input_Name.sendKeys(Page_Name);
 		Input_Title.sendKeys(Page_Name);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HelperClass.scrollto(driver, Parent_page);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Addpage_Button.click();
-		HelperClass.waitElementpresent(driver, editBar);
-		driver.switchTo().frame("editBar-iframe");
-		HelperClass.waitElementpresent(driver, Close_button);	
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Close_button.click();
+		//HelperClass.waitElementpresent(driver, editBar);
+		//driver.switchTo().frame("editBar-iframe");
+		//HelperClass.waitElementpresent(driver, Close_button);		
+		//Close_button.click();
 	}
 }
