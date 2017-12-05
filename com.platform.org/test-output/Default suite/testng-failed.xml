@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
         <methods>
+          <include name="tearDown"/>
           <include name="PersonabarCreatePage"/>
         </methods>
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
