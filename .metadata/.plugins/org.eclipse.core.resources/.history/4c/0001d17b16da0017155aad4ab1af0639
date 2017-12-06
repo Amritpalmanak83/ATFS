@@ -49,7 +49,7 @@ public class VerifyLoginTest
 		}
 		driver.quit();
 	}
-	//@Test(groups= "UserTest", priority = 4)
+	@Test(groups= "UserTest", priority = 4)
 	public void checkUserDatabase() throws SQLException
 	{
 		PlatformDataBaseTest TestDB = new PlatformDataBaseTest();
