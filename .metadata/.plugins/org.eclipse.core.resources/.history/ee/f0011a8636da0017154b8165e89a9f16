@@ -66,13 +66,17 @@ public class PersonaBarPageClass
 	public void PersonabarCreatePage(WebDriver driver, String Page_Name) 
 	{
 		//driver.switchTo().frame("personaBar-iframe");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HelperClass.waitElementpresent(driver, createPage);
 		createPage.click();
 		HelperClass.waitElementpresent(driver, DetailTab);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		DetailTab.click();
 		Input_Name.sendKeys(Page_Name);
 		Input_Title.sendKeys(Page_Name);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HelperClass.scrollto(driver, Parent_page);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Addpage_Button.click();
 		driver.switchTo().defaultContent();
 		HelperClass.waitElementpresent(driver, editBar);
