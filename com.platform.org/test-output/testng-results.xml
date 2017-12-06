@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14478" started-at="2017-12-06T03:37:04Z" finished-at="2017-12-06T03:37:18Z">
+  <suite name="PlatformSuite" duration-ms="33952" started-at="2017-12-06T03:53:22Z" finished-at="2017-12-06T03:53:56Z">
     <groups>
+      <group name="UserTest">
+        <method signature="VerifyLoginTest.checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="checkvalidLogin" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="checkvalidUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+        <method signature="VerifyLoginTest.registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="registerUser" class="PlatformTesting.com.platform.org.VerifyLoginTest"/>
+      </group> <!-- UserTest -->
       <group name="PersonabarPages">
-        <method signature="PersonabarPageTest.PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@343f4d3d]" name="PersonabarCreatePage" class="PlatformTesting.com.platform.org.PersonabarPageTest"/>
+        <method signature="PersonabarPageTest.PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@5442a311]" name="PersonabarCreatePage" class="PlatformTesting.com.platform.org.PersonabarPageTest"/>
       </group> <!-- PersonabarPages -->
     </groups>
-    <test name="Default test" duration-ms="14478" started-at="2017-12-06T03:37:04Z" finished-at="2017-12-06T03:37:18Z">
+    <test name="PlatformTest" duration-ms="33952" started-at="2017-12-06T03:53:22Z" finished-at="2017-12-06T03:53:56Z">
+      <class name="PlatformTesting.com.platform.org.VerifyLoginTest">
+        <test-method status="PASS" signature="checkvalidUser()[pri:1, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="checkvalidUser" duration-ms="6665" started-at="2017-12-05T19:53:22Z" finished-at="2017-12-05T19:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkvalidUser -->
+        <test-method status="PASS" signature="checkvalidLogin()[pri:2, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="checkvalidLogin" duration-ms="6086" started-at="2017-12-05T19:53:29Z" finished-at="2017-12-05T19:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkvalidLogin -->
+        <test-method status="PASS" signature="registerUser()[pri:3, instance:PlatformTesting.com.platform.org.VerifyLoginTest@53b32d7]" name="registerUser" duration-ms="8396" started-at="2017-12-05T19:53:35Z" finished-at="2017-12-05T19:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+      </class> <!-- PlatformTesting.com.platform.org.VerifyLoginTest -->
       <class name="PlatformTesting.com.platform.org.PersonabarPageTest">
-        <test-method status="PASS" signature="PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@343f4d3d]" name="PersonabarCreatePage" duration-ms="13809" started-at="2017-12-05T19:37:04Z" finished-at="2017-12-05T19:37:17Z">
+        <test-method status="PASS" signature="PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@5442a311]" name="PersonabarCreatePage" duration-ms="12111" started-at="2017-12-05T19:53:43Z" finished-at="2017-12-05T19:53:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PersonabarCreatePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@343f4d3d]" name="tearDown" is-config="true" duration-ms="650" started-at="2017-12-05T19:37:17Z" finished-at="2017-12-05T19:37:18Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlatformTesting.com.platform.org.PersonabarPageTest@5442a311]" name="tearDown" is-config="true" duration-ms="672" started-at="2017-12-05T19:53:55Z" finished-at="2017-12-05T19:53:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PersonabarCreatePage status=SUCCESS method=PersonabarPageTest.PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@343f4d3d] output={null}]]]>
+                <![CDATA[[TestResult name=PersonabarCreatePage status=SUCCESS method=PersonabarPageTest.PersonabarCreatePage()[pri:5, instance:PlatformTesting.com.platform.org.PersonabarPageTest@5442a311] output={null}]]]>
               </value>
             </param>
           </params>
@@ -26,6 +45,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- PlatformTesting.com.platform.org.PersonabarPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- PlatformTest -->
+  </suite> <!-- PlatformSuite -->
 </testng-results>

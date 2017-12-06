@@ -54,7 +54,7 @@ public class PersonaBarPageClass
 		driver.switchTo().frame("personaBar-iframe");
 		if(HelperClass.waitElementpresent(driver, personabar)) 
 		{
-			HelperClass.hoverover(driver, Content);
+			//HelperClass.hoverover(driver, Content);
 			HelperClass.hoverAndClick(driver, Content, Content);
 		}
 		else
