@@ -8,7 +8,7 @@ public class PlatformDataBaseTest
 	{
 		// create variable for the Connection string
 		String ConnectionURL= "jdbc:sqlserver://localhost:1433;" 
-			+ "databaseName=Platform91.me;"
+			+ "databaseName=Platform92.me;"
 			+ "integratedSecurity = true;";
 		// Declare the JDBC object.
 			Connection con = null;

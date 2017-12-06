@@ -33,7 +33,7 @@ public class VerifyLoginTest
 		login_page.login_engage(driver, userinfo[0],userinfo[1]); 
 		driver.quit();
 	}
-	//@Test(groups= "UserTest", priority = 3)
+	@Test(groups= "UserTest", priority = 3)
 	public void registerUser()
 	{
 		driver = HelperClass.startBrowser("Chrome", "http://192.168.0.11/");
